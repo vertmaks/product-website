@@ -699,5 +699,65 @@ header .container {
 
 /* #endregion */
 
+/* #region Footer */
+footer .container {
+  max-width: 350px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 93%;
+  color: #173a56;
+}
+
+.main-logo {
+  margin-right: 8px;
+}
+
+.footer-social-links-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-top: 26px;
+  border-radius: 50%;
+  background-color: #edfffc;
+}
+
+.footer-nav-list {
+  text-align: center;
+}
+
+.footer-nav-item {
+  margin-bottom: 32px;
+}
+
+.footer-nav-seite-item,
+.footer-nav-policy-item {
+  line-height: 219%;
+}
+
+.footer-nav-seite-item.active,
+.footer-nav-policy-item.active {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+/* #endregion */
 /* Look later!!! */
 /* https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling/Fundamentals */
