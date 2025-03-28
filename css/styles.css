@@ -346,14 +346,6 @@ header .container {
   max-width: 350px;
 }
 
-/* .showcase-list {
-  margin: 0 auto;
-}
-
-.showcase-item {
-  margin: 0 auto;
-} */
-
 .showcase-item-message-wrapper {
   display: flex;
   flex-direction: row;
@@ -371,7 +363,10 @@ header .container {
   justify-content: center;
 
   padding: 11px;
-  border-radius: 35px;
+  border-top-left-radius: 22px 32px;
+  border-top-right-radius: 32px 22px;
+  border-bottom-left-radius: 22px 32px;
+  border-bottom-right-radius: 32px 22px;
   width: 236px;
   height: 64px;
   box-shadow: 0 2px 8px 0 rgba(86, 117, 146, 0.1);
@@ -394,11 +389,92 @@ header .container {
   gap: 32px;
 }
 
-.showcase-item:nth-child(2) {
+.showcase-item:last-child {
   flex-direction: column-reverse;
 }
 
-/* .showcase-item:nth-child(even) .showcase-item-message-wrapper:nth-child(odd) {
+.showcase-item:last-child .showcase-item-message-wrapper:last-child {
+  flex-direction: row;
+}
+
+.showcase-item:last-child .showcase-item-message-wrapper:first-child {
   flex-direction: row-reverse;
-} */
+}
+
+.showcase-contact-btn {
+  padding: 14px;
+  min-width: 216px;
+  margin: 0 auto;
+  margin-top: 32px;
+  border-radius: 4px;
+  border: none;
+  background-color: #02897a;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
 /* #endregion */
+
+/* #region Articles */
+.articles .container {
+  max-width: 350px;
+}
+
+.articles .section-title {
+  letter-spacing: -1px;
+}
+
+.articles-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.articles-item {
+  border-radius: 8px;
+  overflow: hidden;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow;
+}
+
+.articles-item-img {
+  margin-bottom: 24px;
+}
+
+.articles-item-sign {
+  margin-left: 8px;
+  margin-bottom: 12px;
+}
+
+.articles-item-link {
+  display: block;
+  padding-bottom: 40px;
+}
+
+.articles-sign-accent {
+  font-weight: 600;
+}
+
+.articles-item-title {
+  margin-left: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 167%;
+  max-width: 294px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.articles-item:hover .articles-item-link .articles-item-title,
+.articles-item:focus .articles-item-link .articles-item-title {
+  color: #02897a;
+}
+
+.articles-item:hover,
+.articles-item:focus {
+  box-shadow: 0 2px 8px 0 rgba(86, 117, 146, 0.1);
+}
+
+/* #endregion */
+
+/* Look later!!! */
+/* https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling/Fundamentals */
