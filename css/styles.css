@@ -476,5 +476,140 @@ header .container {
 
 /* #endregion */
 
+/* #region Price */
+
+.price .container {
+  max-width: 322px;
+  margin: 0 auto;
+}
+
+.price-list {
+  text-align: center;
+}
+
+.price-item {
+  border-radius: 8px;
+  width: 322px;
+  padding: 24px 24px 32px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+
+.price-item:nth-child(even) {
+  background-color: #02897a;
+
+  .price-item-title {
+    color: #fff;
+  }
+
+  .price-item-text {
+    color: #fff;
+  }
+
+  .price-item-descr-list {
+    color: #fff;
+  }
+
+  .price-item-container {
+    color: #fff;
+  }
+
+  .dollar {
+    color: #fff;
+  }
+}
+
+.price-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.price-item-title {
+  font-size: 24px;
+  line-height: 167%;
+  margin-bottom: 8px;
+}
+
+.price-item-text {
+  line-height: 250%;
+  margin-bottom: 16px;
+}
+
+.price-item:nth-child(even) .price-item-list {
+  margin-bottom: 16px;
+}
+
+.price-item-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-item-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.price-item-container {
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 132%;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #02897a;
+  margin-right: 8px;
+}
+
+.price-item-container-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.dollar {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+  letter-spacing: 0em;
+  color: #02897a;
+}
+
+.per-month {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 119%;
+  letter-spacing: 0.01em;
+  color: #afafaf;
+}
+
+.price-item-descr-list {
+  max-width: 138px;
+  margin-bottom: 16px;
+}
+
+.price-item-descr {
+  font-weight: 500;
+  line-height: 137%;
+  letter-spacing: 0.01em;
+}
+
+.price-btn {
+  margin: 0 auto;
+  margin-top: 38px;
+  padding: 11px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  width: 139px;
+  background-color: #02897a;
+}
+
+.price-item:nth-child(even) .price-btn {
+  background-color: #fff;
+  color: #02897a;
+}
+/* #endregion */
+
 /* Look later!!! */
 /* https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling/Fundamentals */
